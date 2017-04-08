@@ -85,8 +85,9 @@ public class SignupActivity extends AppCompatActivity {
             public void onSuccess(AuthResult authResult) {
                 progressDialog.dismiss();
                 Intent intent = new Intent(getBaseContext(), MapsActivity.class);
-                finish();
                 startActivity(intent);
+                finish();
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
             }
         }).addOnFailureListener(new OnFailureListener() {
             @Override

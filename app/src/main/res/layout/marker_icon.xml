@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/map_pin_layout"
+    tools:ignore="MissingPrefix">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pin_layout"
+        android:layout_marginTop="25dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/map_pin_base_big"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/text_layout"
+            android:layout_marginTop="-10dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/text_layout"
+            android:background="@drawable/map_pin_background"
+            android:padding="8dp"
+            android:minWidth="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pebbles"
+                android:textStyle="bold"
+                fontPath="fonts/Roboto-Bold.ttf"
+                android:textSize="12sp"
+                android:textColor="#000000"
+                android:id="@+id/pin_place_name"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pebbles"
+                android:textStyle="bold"
+                fontPath="fonts/Roboto-Bold.ttf"
+                android:textSize="12sp"
+                android:textColor="#000000"
+                android:id="@+id/pin_event_name"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

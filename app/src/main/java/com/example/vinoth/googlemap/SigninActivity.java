@@ -80,8 +80,9 @@ public class SigninActivity extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             progressDialog.dismiss();
                             Intent intent = new Intent(getBaseContext(), MapsActivity.class);
-                            finish();
                             startActivity(intent);
+                            finish();
+                            overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                             Toast.makeText(SigninActivity.this, "login sucess", Toast.LENGTH_SHORT).show();
                         } else {
                             Toast.makeText(SigninActivity.this, "failed", Toast.LENGTH_SHORT).show();
